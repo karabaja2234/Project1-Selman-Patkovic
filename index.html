@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+
+  <!-- Skripta za font, ikone i povezivanje css-a sa html fajlom -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/26b51dd78e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  <!-- Funkcije slidera -->
+  <script>
+    function openSlideMenu() {
+      document.getElementById("menu").style.width = "200px";
+      document.getElementById("content").style.marginLeft = "200px";
+      document.getElementById("main1").style.marginLeft = "200px";
+    }
+    function closeSlideMenu() {
+      document.getElementById("menu").style.width = "0";
+      document.getElementById("content").style.marginLeft = "0";
+      document.getElementById("main1").style.marginLeft = "0";
+    }
+  </script>
+</head>
+<body>
+
+
+  <!-- Responsive slider sa lijeve strane -->
+  <div id="content">
+    <span class="slide">
+      <a href="#" class="open" onclick="openSlideMenu()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </span>
+
+<!-- Content slidera (navbara) -->
+    <div id="menu" class="nav">
+      <a class="close" onclick="closeSlideMenu()">
+        <i class="fas fa-times-circle"></i></a>
+      <a href="#home" class="navlink">Home</a>
+      <a href="#main2-first-section" class="navlink">About</a>
+      <a href="#main3" class="navlink">Login <i class="fas fa-user"></i></a>
+      <a href="#main3" class="navlink">Register</i></a>
+      <a href="#row2" class="navlink">Contact</a><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <div class="nav-icons">
+        <a href="https://www.facebook.com/selman.patkovic.9" class="nav-icon"> <i class="fab fa-facebook"></i></a>
+        <a href="https://www.youtube.com/channel/UCCkTnxr3TBGJYQaByq6wXow" class="nav-icon"> <i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/karabaja2234/?hl=en" class="nav-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Uvodni dio sa naslovom i podnaslovom -->
+<div id="home">
+  <div id="main1">
+    <div id="snow-fall"></div>
+
+    <!-- Glavni naslov -->
+    <div class="box1">
+      <h1 class="glavni-naslov-main">Develop URSELF
+        Association Zenica</h1>
+    </div>
+
+    <!-- Podnaslov, button i strelica -->
+    <div class="box2">
+      <h5 class="podnaslov">
+        Do you want to become a successful freelancer/self-made developer?
+        We are here to guide you. Come and join us!
+      </h5>
+      <button type="button" class="submit-button">Join now</button>
+    </div>
+    <div class="box3">
+      <a href="#main2" class="arrow-down">
+        <i class="fas fa-arrow-circle-down"></i></a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Drugi dio koji predstavlja opis stranice i usluga -->
+  <div id="main2">
+
+    <!-- Prvi dio opcenito o sajtu -->
+    <div id="main2-first-section">
+      <h4 class="podnaslov2">What is the main goal of DevelopURSELF Association?</h4>
+      <p>It is to motivate people who strive to become developers, throughout multiple courses, different types of
+        forums, made specifically for spreading rare and very
+        useful tips, tricks and benefits within a particular programming language. Of course, there's a variety of
+        tutorials, starting from the ones dedicated to help
+        the community of beginners, but also those which are intended to improve the knowledge of already skilled
+        programmers and web developers.
+        In the next part of the page, you will discover all the possibilities that we have to offer, including many
+        interesting parts, such as developers meet-ups,
+        different competitions, gaming events ect. Stick around and enjoy!</p>
+    </div>
+
+    <!-- Drugi dio koji se sastoji od 4 carda, svaki sa svojim zasebnim opisom -->
+    <div id="main2-second-section">
+
+      <!-- Youtube box -->
+      <div class="box-1">
+        <div class="part1"><i class="fab fa-youtube"></i></div>
+        <div class="part2">
+          <p>You should definitely visit our main youtube channel, regardless of being a beginner or an advanced
+            developer, programming is an endless stream of knowledge!
+            With over 500k subscribers and more than 150 videos uploaded, we offer daily content including tutorials,
+            free courses, problem-solving videos and much more.
+          </p>
+        </div>
+        <div class="part3">
+          <button type="button" class="submit-button2">Visit out YouTube channel</button>
+        </div>
+      </div>
+
+      <!-- Box vezan za kurseve -->
+      <div class="box-2">
+        <div class="part1">
+          <div class="first-icon"><i class="fab fa-js-square"></i></div>
+          <div class="second-icon"><i class="fab fa-python"></i></div>
+          <div class="third-icon"><i class="fas fa-code"></i></div>
+        </div>
+        <div class="part2">
+          <p>Every 6 months, we organise a new course, taking into a count the difficulty of each of them. The courses
+            which were the most successful in the past 2 years
+            were: Python, JavaScript, HTML & CSS and CSharp. Most importantly, we are giving our best to keep up with
+            the latest programming trends and the languages
+            which are mostly used in the past year.
+          </p>
+        </div>
+        <div class="part3">
+          <button type="button" class="submit-button2">Join one of our courses</button>
+        </div>
+      </div>
+
+      <!-- Facebook & Instagram box -->
+      <div class="box-3">
+        <div class="part1">
+          <div class="first-icon"><i class="fab fa-facebook-square"></i></div>
+          <div class="second-icon"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="part2">
+          <p>Be sure to visit our facebook and instagram page, where we tend to organise live streams every week, giving
+            our supporters the chance to ask our main
+            senior-developer team any question regarding our work and programming in general. There is also a live
+            forum, led by one of our admins, where we post
+            free exercises, daily tips and tricks, of course, in arrangement with our followers, to give them what they
+            mostly want.
+          </p>
+        </div>
+        <div class="part3">
+          <button type="button" class="submit-button2">Visit our Facebook and Instagram page</button>
+        </div>
+      </div>
+
+      <!-- Poenta organizacije (opis) -->
+      <div class="box-4">
+        <div class="part1">
+          <div class="first-icon"><i class="fas fa-heart"></i></div>
+        </div>
+        <div class="part2">
+          <p>DevelopURSELF is not only a developing association. It is more social than it appears, because we tend to
+            organise many meet-ups, competitions and
+            gaming events, in order to meet our community and to let them know that they can approach us at any time for
+            help, because that's what this
+            organisation is all about.
+          </p>
+        </div>
+        <div class="part3">
+          <button type="button" class="submit-button2">Apply for the upcoming tournaments</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Treci dio sa login i register formom -->
+  <div id="main3">
+
+    <!-- Prva kolona koja se sastoji od slika sa lijeve strane -->
+    <div class="column1">
+      <div class="box_1">
+        <img src="programming.jpg" alt="">
+      </div>
+      <div class="box_2">
+        <img src="teamwork.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- Druga kolona sa formama -->
+    <div class="column2">
+
+      <!-- Login box -->
+      <div class="box_3">
+        <div class="register-form">
+          <h1 class="register-naslov">Login</h1>
+          <p class="register-text">Please fill in the fields bellow to login</p>
+          <hr class="register-linija">
+
+          <label class="Email-natpis" for="email"><b>Email</b></label>
+          <input type="text" class="Email-input" placeholder="Enter Email" name="email" required>
+
+          <label class="Password-natpis" for="psw"><b>Password</b></label>
+          <input type="password" class="Password-input" placeholder="Enter Password" name="psw" required>
+          <hr class="register-linija">
+          <button type="submit" class="login-button">Login</button>
+        </div>
+      </div>
+
+      <!-- Register box -->
+      <div class="box_4">
+        <div class="register-form">
+          <h1 class="register-naslov">Register and be part of our community</h1>
+          <p class="register-text">Please fill in this form to create an account.</p>
+          <hr class="register-linija">
+
+          <label class="Email-natpis" for="email"><b>Email</b></label>
+          <input type="text" class="Email-input" placeholder="Enter Email" name="email" required>
+
+          <label class="Password-natpis" for="psw"><b>Password</b></label>
+          <input type="password" class="Password-input" placeholder="Enter Password" name="psw" required>
+
+          <label class="Password_repeat-natpis" for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" class="Password_repeat-input" placeholder="Repeat Password" name="psw-repeat" required>
+          <hr class="register-linija">
+
+          <button type="submit" class="register-button">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Posljednji dio -->
+  <div id="main4">
+
+    <!-- Prvi red sa slikom grada -->
+    <div class="row1">
+        <div id="snow-fall2"></div>
+      <img src="buildings.jpg" alt="" width="100%" height="100%">
+    </div>
+
+    <!-- Drugi red koji se sastoji od kontakt informacija i google mape -->
+    <div id="row2">
+
+      <!-- Kontakt -->
+      <div class="col1">
+        <h5 class="zadnji-naslov">Contact</h5>
+        <p><i class="fas fa-phone"></i> +387 62 707 490 <br> <i class="fas fa-envelope"></i> selmanpatak@gmail.com <br>
+          <i class="fas fa-map-marker-alt"></i> Prve Zeničke brigade 9b <br> <i class="fab fa-facebook-f"></i> Selman
+          Patković <br> <i class="fab fa-instagram"></i> karabaja2234</p>
+      </div>
+
+      <!-- Lokacija (google mapa) -->
+      <div class="col2">
+        <h5 class="zadnji-naslov">Location</h5>
+        <p><iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2860.19561552307!2d17.9248424158911!3d44.203037379106284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475ee23ab886423b%3A0x1d108a6f018ee8ff!2sPrve%20zeni%C4%8Dke%20brigade%2C%20Zenica%2072000!5e0!3m2!1sen!2sba!4v1569947053825!5m2!1sen!2sba"
+            width="500" height="185" frameborder="0" style="border:0;" allowfullscreen="" class="mapa"></iframe></p>
+      </div>
+
+      <!-- Logo kompanije -->
+      <div class="col3">
+        <img src="logo.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- Importane aplikacije (particles) -->
+  <script type="text/javascript" src="particles.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="app2.js"></script>
+</body>
+</html>
